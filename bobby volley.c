@@ -6,3 +6,52 @@
 // 0 each, and play N turns. The winner of each of those hands is given to you as a string consisting of 'A's and 'B's. 'A' denoting that Alice won that point, and 'B' denoting that Bob won that point. Your job is the find the score of both of them after the 
 // N turns.
 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int t;
+    scanf("%d", &t);
+    while(t--)
+    {
+        int n, a=0, b=0;
+        scanf("%d",&n);
+        char server='A',x[n];
+        scanf("%s",x);
+        
+        for(int i=0;i<n;i++)
+        {
+            if(x[i]=='A')
+            {
+                if(server=='A')
+                {
+                    a++;
+                }
+                else
+                {
+                    server='A';
+                }
+                }
+                else if(x[i]=='B')
+                {
+                    if(server=='B')
+                    {
+                        b++;
+                    }
+                    else
+                    {
+                        server='B';
+                    }
+                }
+            }
+        
+        printf("%d %d\n",a,b);
+        
+    }
+        
+
+    return 0;
+}
+    
+        

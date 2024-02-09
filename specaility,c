@@ -1,10 +1,24 @@
-On every CodeChef user's profile page, the list of problems that they have set, tested, and written editorials for, is listed at the bottom.
+// On every CodeChef user's profile page, the list of problems that they have set, tested, and written editorials for, is listed at the bottom. Given the number of problems in each of these 
+//  3 3 categories as  X,Y, and  Z respectively (where all three integers are distinct), find if the user has been most active as a Setter, Tester, or Editorialist.
 
-Given the number of problems in each of these 
-3
-3 categories as 
-,
-�
-,
-X,Y, and 
-Z respectively (where all three integers are distinct), find if the user has been most active as a Setter, Tester, or Editorialist.
+
+#include<stdio.h>
+
+int main() 
+{
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int X,Y,Z;
+        scanf("%d%d%d",&X,&Y,&Z);
+        if(X>Y&&X>Z)
+        printf("\nSetter");
+        else if(Y>X&&Y>Z)
+        printf("\nTester");
+        else if(Z>X&&Z>Y)
+        printf("\nEditorialist");
+    }
+    
+	return 0;
+}

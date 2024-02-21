@@ -4,3 +4,14 @@
 // 4.
 // You know the point values given by each judge to Om's problem. Can you tell whether his problem is good?
 
+#include <stdio.h>
+
+char* is_good_problem(int scores[], int n) {
+    
+    for (int i = 0; i < n; i++) {
+        if (scores[i] <= 4) {
+            return "NO";
+        }
+    }
+    return "YES";
+}

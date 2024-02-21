@@ -15,3 +15,24 @@ char* is_good_problem(int scores[], int n) {
     }
     return "YES";
 }
+
+
+int main() {
+    int t;
+    scanf("%d", &t);
+    
+    while (t--) {
+        int n;
+        scanf("%d", &n);
+        
+        int scores[n];
+        for (int i = 0; i < n; i++) {
+            scanf("%d", &scores[i]);
+        }
+        
+        printf("%s\n", is_good_problem(scores, n));
+    }
+    
+    return 0;
+}
+

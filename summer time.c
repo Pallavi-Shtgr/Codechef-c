@@ -10,3 +10,20 @@
 // Print "YES" if Mamalesh will drink mango lassi today, and "NO" otherwise (without quotes).
 
 // Each letter of the output may be printed in either uppercase or lowercase, i.e, the strings NO, no, No, and nO will all be treated as equivalent.
+
+#include <stdio.h>
+
+int main() {
+    int x;
+
+    scanf("%d", &x);
+
+   
+    if( x> 35) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+
+    return 0;
+}

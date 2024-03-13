@@ -7,3 +7,18 @@
 // 40 km/hr, otherwise the person will be fined.
 
 // You need to tell whether Alice will be fined or not.
+
+
+
+#include <stdio.h>
+
+int main() {
+    int s;
+    scanf("%d",&s);
+    if(s>40){
+        printf("YES\n");
+    }
+    else printf("NO\n");
+
+}
+

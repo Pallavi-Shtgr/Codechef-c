@@ -18,3 +18,31 @@
 
 // Output Format
 // For each test case, output on a new line the answer: "YES" if the tournament can be interesting, and "NO" otherwise (without quotes).Each letter of the output may be printed in either uppercase or lowercase, i.e, the strings NO, no, No, and nO will all be treated as equivalent.
+
+
+#include <stdio.h>
+
+int main() {
+    int T;
+    scanf("%d", &T);
+
+    while (T--) {
+        int N, M;
+        scanf("%d %d", &N, &M);
+
+
+        if (N == 1) {
+            printf("NO\n");
+        }
+
+        else if (M <= N - 1) {
+            printf("YES\n");
+        } 
+
+        else {
+            printf("NO\n");
+        }
+    }
+
+    return 0;
+}

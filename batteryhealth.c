@@ -10,3 +10,22 @@
 // For each test case, output on a new line, YES, if the battery is in optimal condition, and NO otherwise.
 
 // You may print each character in uppercase or lowercase. For example, NO, no, No and nO, are all considered identical.
+
+
+#include <stdio.h>
+
+            int main() {
+    int t;
+    scanf("%d",&t);
+                while(t--){
+    int x;
+    scanf("%d",&x);
+    if(x<80){
+        printf("No\n");
+    }
+    else printf("YES\n");
+
+	
+            }
+
+            }

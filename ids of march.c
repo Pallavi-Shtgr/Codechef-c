@@ -8,3 +8,17 @@
 // Output Format
 // Print "Yes" if today is the ides of March, and "No" otherwise (without quotes).
 // Each letter of the output may be printed in either uppercase or lowercase, i.e, the strings NO, no, nO, and No will all be treated as equivalent.
+
+#include <stdio.h>
+
+int main(void) {
+     int n;
+     scanf("%d",&n);
+     if(n==15){
+         printf("YES\n");
+     }
+     else printf("NO\n");
+     return 0;
+
+}
+

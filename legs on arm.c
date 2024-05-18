@@ -11,13 +11,11 @@ int main() {
     while (T--) {
         int N;
         scanf("%d", & N);
-
         int a;
         if (N % 4 == 0)
             a = N / 4;
         else
             a = N / 4 + 1;
-
         printf("%d\n", a);
     }
 

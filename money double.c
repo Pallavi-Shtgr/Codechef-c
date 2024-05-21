@@ -9,7 +9,8 @@
 
 // Output Format
 // For each test case, output on a new line one integer: the maximum amount of money which Chef can accumulate after Y years.
-#include <stdio.h>
+
+#include<stdio.h>
 
     int M(int X, int Y) {
     for (int i = 0; i < Y; ++i) {

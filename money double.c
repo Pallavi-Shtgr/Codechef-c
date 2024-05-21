@@ -9,3 +9,29 @@
 
 // Output Format
 // For each test case, output on a new line one integer: the maximum amount of money which Chef can accumulate after Y years.
+#include <stdio.h>
+
+    int M(int X, int Y) {
+    for (int i = 0; i < Y; ++i) {
+        if (X * 2 > X + 1000) {
+            X *= 2;
+        } else {
+            X += 1000;
+        }
+    }
+    return X;
+}
+
+int main() {
+    int T;
+    scanf("%d", &T);
+    while (T--) {
+        int X;
+        int Y;
+        scanf("%d %d", &X, &Y);
+        int result = M(X, Y);
+        printf("%d\n", result);
+    }
+    
+    return 0;
+}

@@ -33,6 +33,5 @@ int main() {
         int result = M(X, Y);
         printf("%d\n", result);
     }
-    
-    return 0;
+ 
 }

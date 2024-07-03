@@ -19,3 +19,32 @@ int hammingDistance(char *str1, char *str2, int length) {
     return distance;
 }
 
+int main() {
+    int T;
+    scanf("%d", &T);
+
+    while (T--) {
+        int N, M;
+        scanf("%d %d", &N, &M);
+        
+        char A[N + 1];
+        char B[M + 1];
+        
+        scanf("%s", A);
+        scanf("%s", B);
+        
+        int minHamming = M;
+
+        for (int i = 0; i <= N - M; i++) {
+            int current = hammingDistance(A + i, B, M);
+            if (current< minHamming) {
+                minHamming = current;
+            }
+        }
+
+        printf("%d\n", minHamming);
+    }
+
+    return 0;
+}
+

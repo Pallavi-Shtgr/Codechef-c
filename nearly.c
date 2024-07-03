@@ -5,3 +5,17 @@
 // Chef has a string A of length N.
 // Chef's favorite string is B, which has length M. It is known that M≤N.
 // Find the minimum Hamming distance between B and some contiguous substring of A that has length M.
+
+#include <stdio.h>
+#include <string.h>
+
+int hammingDistance(char *str1, char *str2, int length) {
+    int distance = 0;
+    for (int i = 0; i < length; i++) {
+        if (str1[i] != str2[i]) {
+            distance++;
+        }
+    }
+    return distance;
+}
+

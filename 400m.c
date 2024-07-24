@@ -7,7 +7,6 @@
 
 int main(void) 
 {
-	// your code goes here
 	int T,A,B,C;
 	scanf("%d",&T);
 	while(T--)

@@ -1,0 +1,2 @@
+// The annual budget for ChefLand has been announced and people are concerned about the modification in capital gain tax.
+// Given that the capital gain tax changed from X% to Y%, find whether it has INCREASED, DECREASED, or remained the SAME.

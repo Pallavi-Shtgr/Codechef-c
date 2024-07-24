@@ -1,0 +1,2 @@
+// Considering the new budget, Chef decided to keep all his money in a savings account.
+// Chef has X income sources where he gets Y rupees from each source. However, due to bank restrictions, Chef can keep at most Z rupees in the savings account.

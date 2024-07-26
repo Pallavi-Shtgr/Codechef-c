@@ -1,2 +1,2 @@
 Hello everyone.
-This repo is about my latest project titled “CodeChef Readme Stats”.
+This repo is about my latest project-  “CodeChef Readme Stats”.

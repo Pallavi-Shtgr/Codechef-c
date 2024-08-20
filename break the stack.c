@@ -5,3 +5,21 @@
 
 // Chef can then continue applying this operation on the smaller sticks he obtains, as many times as he likes.
 // Can Chef obtain a stick of length exactly X by doing this?
+
+#include <stdio.h>
+
+int main(void) {
+	
+	int T, N, X;
+	scanf("%d", &T);
+	
+	while (T--) {
+	    
+	    scanf("%d %d", &N, &X);
+	    
+	    if (N % 2 == 1 && X % 2 == 0) printf("no\n");
+	    else printf("yes\n");
+	    
+	}
+
+}

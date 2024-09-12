@@ -7,3 +7,18 @@
 // Output Format
 // Output either YES or NO, depending on whether IOI is ongoing on September X.
 // Each character of the output may be printed in either lowercase or uppercase - that is, the strings no, NO, No, and nO will all be treated as equivalent.
+
+#include <stdio.h>
+
+int main() {
+    int X;
+    scanf("%d", &X);
+    
+    if (X >= 1 && X <= 8) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+
+return 0;
+}

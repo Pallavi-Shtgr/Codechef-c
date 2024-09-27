@@ -6,7 +6,6 @@
 // If any party has a clear majority, print the winning party (A, B or C). Otherwise, print NOTA.
 
 #include<stdio.h>
-
 int main()
 
 {

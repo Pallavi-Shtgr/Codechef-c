@@ -8,3 +8,19 @@
 // X and Y — the number of working hours on each day from Monday to Thursday and the number of working hours on Friday respectively.
 // Output Format
 // For each test case, output the total number of working hours in one week.
+
+#include <stdio.h>
+
+int main(void) {
+    int t;
+    scanf("%d",&t);
+    while(t!=0)
+    {
+        int x,y;
+        scanf("%d %d",&x,&y);
+        printf("%d \n",((4*x)+y));
+        t--;
+    }
+	// your code goes here
+	return 0;
+}
